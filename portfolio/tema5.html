@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Tema 5 - Diseño Web"/>
+	<meta name="keywords" content="HTML, CSS"/>
+	<meta name="author" content="Ignacio Rubio"/>
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico"/>
+	<link rel="stylesheet" href="../css/estilo_temas.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	
+	<title>DW - Tema 5</title>
+
+</head>
+
+
+<body>
+
+	<header id="cab1">
+		<div id="cabecera">
+			<a href="../index.html">
+				<img src="../img/logo_blanco.png" alt="Logo Desarrollo Web" width="200" height="200"/>
+			</a>
+			<h1>Diseño de Interfaces Web</h1>
+			<h2>2º Desarrollo de apliciones Web</h2>
+		</div>
+	</header>
+	
+	<nav >
+		<div id="nave">
+			<ul>
+			
+				<li>
+					<a href="tema5.html">TEMA 5</a>
+				</li>
+							
+				<li>
+					<a href="tema4.html">TEMA 4</a>
+				</li>
+				<li>
+					<a href="tema3.html">TEMA 3</a>
+				</li>
+				<li>
+					<a href="tema2.html">TEMA 2</a>
+				</li>
+				<li>
+					<a href="tema1.html">TEMA 1</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="camino">
+		<a href="../index.html">Ínicio</a> <span>>>>></span> <a href="tema5.html">Tema 5</a>
+	</div>
+	<!-- Cuerpo página -->
+	<section>	
+		<h1>5. Imágenes para la web.</h1> <!--que sea una lista num-->
+	
+		
+		<article>
+			
+			<h2 id="t5p1">Tipos de imágenes</h2>
+			
+			<p>A grandes rasgos, hay dos tipos de imágenes digitales::
+			</p>
+			
+			<ul style="margin-left: 60px;">
+				<li><strong>Imágenes vectoriales</strong></li>
+				<li><strong>Imágenes de mapa de bits</strong></li>
+			</ul>
+			
+			<p>Las <strong>imágenes vectoriales</strong> son imágenes constituidas por objetos geométricos autónomos (líneas, curvas, polígonos,...), definidos por ciertas funciones matemáticas (vectores) que determinan sus características (forma, color, posición,...)
+			</p>
+			
+			<p>Las <strong>imágenes de mapa de bits</strong> están formadas por una serie de puntos (píxeles), cada uno de los cuales contiene información de color y luminosidad.
+			</p>
+			
+			<img style="margin-left: 40px;" src="../img/tema 5/mapa_vectorial1.png" alt="Imagenes Vectorial y Mapa de Bits"/>
+			
+			<p>Las imágenes vectoriales se crean con programas de diseño o dibujo vectorial (Adobe Ilustrator, Corel Draw, Inkscape…) y suelen usarse en dibujos, rótulos, logotipos... Su principal ventaja es que una imagen puede ampliarse sin sufrir el efecto de “pixelado” que tienen las imágenes de mapa de bits al aumentarse.
+			</p>
+			
+			<img style="margin-left: 40px;" src="../img/tema 5/mapa_vectorial2.png" alt="Imagenes Vectorial y Mapa de Bits"/>
+			
+			<blockquote style="margin-left: 20px; margin-top: 30px; font-style: italic; text-align: justify;">En la imagen (vectorial) del ratón de la izquierda puede apreciarse que al ampliar una zona no hay perdida de detalle, mientras que en la fotografía del busto Nefertiti (mapa de bits) al ampliar mucho una zona, se observan los píxeles y la imagen se degrada.
+			</blockquote>
+			
+			<p>Las imágenes de mapa de bits presentan una mayor gama de colores y de tonos que las vectoriales, por lo que son el tipo de imágenes usado en fotografía y, se crean con las cámaras de fotos, los escáneres y con programas de edición de imagen y dibujo (Adobe Photoshop, Gimp, etc.) Las imágenes mapa de bits generan archivos que ocupen mucha más memoria (bytes) que las imágenes vectoriales.
+			</p>
+			
+			<table style="margin-left: 50px;">
+				<tr>
+					<th style="padding-right: 60px;">Formatos de imagen vectorial</th>
+					<th>Formatos de imagen de mapa de bits</th>
+				</tr>
+				
+				<tr>
+					<td>
+						<ul style="list-style-type: none;">
+							<li>AI (Adobe Illustrator)</li>
+							<li>CDR (Corel Draw)</li>
+							<li>DXF (Autodesk)</li>
+							<li>EMF</li>
+							<li>EPS</li>
+							<li>ODG (Open Office Draw)</li>
+							<li>SVG (Inkscape)</li>
+							<li>SWF (Adobe flash)</li>
+							<li>WMF (Microsoft)</li>
+						</ul>
+					</td>
+					<td>
+						<ul style="list-style-type: none;">
+							<li>BMP</li>
+							<li>GIF</li>
+							<li>JPEG</li>
+							<li>PNG</li>
+							<li>PSD</li>
+							<li>RAW</li>
+							<li>TIFF</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+
+		</article> <!--Tipos de imágenes-->
+		
+		<article>
+			
+			<h2 id="t5p2">Formatos de imágenes</h2>
+
+		</article> <!--Formatos de imágenes-->
+		
+		<article>
+			
+			<h3 id="t5p21">Calidad y su "peso"</h3>
+			<div class="contenido1">
+				<p>El peso de una imagen vendrá determinado por el formato (JPG, GIF, RAW, TIFF, PNG) y por el tipo de compresión que se elija.
+				</p>
+				
+				<p>El objetivo de la compresión de imagen es reducir los datos redundantes e irrelevantes de la imagen con la menor pérdida posible. Para permitir su almacenamiento o transmisión de forma eficiente.
+				</p>
+				
+				<p>La clasificación de los métodos de compresión:
+				</p>
+				
+				<ul>
+					<li style="margin-top: 5px; margin-left: 60px;">Compresión sin pérdida de información (LOSSLESS)</li>
+					<li style="margin-top: 5px; margin-left: 60px;">Compresión con pérdida de información (LOSSY)</li>
+				</ul>
+				
+				<p>Ejemplos de peso según formatos:
+				</p>
+				
+				<ul>
+					<li style="margin-top: 5px; margin-left: 60px;">Imagen en formato JPEG (resolución máxima o mínima compresión): 119 Kbytes</li>
+					<li style="margin-top: 5px; margin-left: 60px;">Imagen en formato JPEG (resolución alta o poca compresión): 71 Kbytes</li>
+					<li style="margin-top: 5px; margin-left: 60px;">Imagen en formato JPEG (resolución media o compresión media): 64 Kbytes</li>
+					<li style="margin-top: 5px; margin-left: 60px;">Imagen en formato JPEG (resolución mínima o compresión máxima): 52 Kbytes</li>
+					<li style="margin-top: 5px; margin-left: 60px;">Imagen en formato GIF (256 colores): 29 Kbytes</li>
+					<li style="margin-top: 5px; margin-left: 60px;">Imagen en formato GIF (128 colores): 26 Kbytes</li>
+					<li style="margin-top: 5px; margin-left: 60px;">Imagen en formato GIF (64 colores): 23 Kbytes</li>
+				</ul>
+			</div>
+		</article> <!--Calidad y su "peso"-->
+		
+		<article>
+			
+			<h3 id="t5p22">Formatos web: jpg, gif, png. Características y pros y contras</h3>
+			
+			<table>
+				<!--GIF-->
+				<tr>
+					<th>GIF (Graphics Interchange Format)</th>
+					<td>
+						<ul style="margin-left: 50px; margin-bottom: 60px;">
+							<li>Ha sido diseñado específicamente para comprimir imágenes digitales.</li>
+							<li>Reduce la paleta de colores a 256 colores como máximo (profundidad de color de 8 bits).</li>
+							<li>Admite gamas de menor número de colores y esto permite optimizar el tamaño del archivo que contiene la imagen.</li>
+							<li>Ventaja: Es un formato idóneo para publicar dibujos en la web.</li>
+							<li>Inconveniente: No es recomendable para fotografías de cierta calidad ni originales ya que el color real o verdadero utiliza una paleta de más de 256 colores.</li>
+						</ul>
+					</td>
+				</tr>
+				
+				<!--JPEG-->
+				<tr>
+					<th>JPG-JPEG (Joint Photographic Experts Group)</th>
+					<td>
+						<ul style="margin-left: 50px; margin-bottom: 60px;">
+							<li>A diferencia del formato GIF, admite una paleta de hasta 16 millones de colores.</li>
+							<li>Es el formato más común junto con el GIF para publicar imágenes en la web.</li>
+							<li>La compresión JPEG puede suponer cierta pérdida de calidad en la imagen. En la mayoría de los casos esta pérdida se puede asumir porque permite reducir el tamaño del archivo y su visualización es aceptable. Es recomendable utilizar una calidad del 60-90 % del original.</li>
+							<li>Cada vez que se modifica y guarda un archivo JPEG, se puede perder algo de su calidad si se define cierto factor de compresión.</li>
+							<li>Las cámaras digitales suelen almacenar directamente las imágenes en formato JPEG con máxima calidad y sin compresión.</li>
+							<li>Ventaja: Es ideal para publicar fotografías en la web siempre y cuando se configuren adecuadamente dimensiones y compresión.</li>
+							<li>Inconveniente: Si se define un factor de compresión se pierde calidad. Por este motivo no es recomendable para archivar originales.</li>
+						</ul>
+					</td>
+				</tr>
+				
+				<!--PNG-->
+				<tr>
+					<th>PNG (Portable Network Graphic)</th>
+					<td>
+						<ul style="margin-left: 50px; margin-bottom: 60px;">
+							<li>Es un formato de reciente difusión alternativo al GIF.</li>
+							<li>Tiene una tasa de compresión superior al formato GIF (+10%)</li>
+							<li>Admite la posibilidad de emplear un número de colores superior a los 256 que impone el GIF.</li>
+							<li>Debido a su reciente aparición sólo es soportado en navegadores modernos como IE 4 o superior.</li>
+						</ul>
+					</td>
+				</tr>
+				
+			</table>
+
+		</article> <!--Formatos web: jpg, gif, png. Características y pros y contras-->
+		
+		<article>
+			
+			<h2 id="t5p3">Software para procesar imágenes</h2>
+			
+			<p>El Software para procesar imágenes permite optimizar, manipular, retocar, etcétera imágenes a través de herramientas que facilitan ese trabajo.
+			</p>
+			
+			<h4>Adobe Photoshop</h4>
+			<p>Adobe Photoshop es un editor de gráficos rasterizados desarrollado por Adobe Systems Incorporated. Usado principalmente para el retoque de fotografías y gráficos. Fue lanzado el 10 de febrero de 1990 y es compatible con Windows y MacOS.
+			</p>
+			
+			<h4>GIMP</h4>
+			<p>GIMP es un programa de edición de imágenes digitales en forma de mapa de bits, tanto dibujos como fotografías. Es un programa libre y gratuito. Forma parte del proyecto GNU y está disponible bajo la Licencia pública general de GNU y GNU Lesser General Public License.
+			</p>
+			
+			<p>Es el programa de manipulación de gráficos disponible en más sistemas operativos (Unix, GNU/Linux, FreeBSD, Solaris, Microsoft Windows y Mac OS X, entre otros).
+			</p>
+			
+			<p>GIMP tiene herramientas que se utilizan para el retoque y edición de imágenes, dibujo de formas libres, cambiar el tamaño, recortar, hacer fotomontajes, convertir a diferentes formatos de imagen, y otras tareas más especializadas. Se pueden también crear imágenes animadas en formato GIF e imágenes animadas en formato MPEG usando un plugin de animación.
+			</p>
+			
+			<h4>Pixlr</h4>
+			<p>Pixlr es un conjunto de herramientas y utilidades en la nube, incluido un numero de editores de fotos, una extensión para el navegador para hacer capturas de pantalla, y un servicio de compartir fotografías/imágenes. Aunque fue diseñada para uso no profesional, la aplicación permite realizar tanto ediciones más sencillas como ediciones más avanzadas.
+			</p>
+		
+		</article> <!--Software para procesar imágenes-->
+		
+		<article>
+			
+			<h2 id="t5p4">Optimización de imágenes para la web</h2>
+			
+			<p>La optimización de las imágenes aporta el máximo ahorro de bytes y permite mejorar al máximo el rendimiento en el sitio web: cuantos menos bytes tenga que descargar el navegador, menos competencia se producirá en el ancho de banda del cliente y más rápidamente podrá el navegador renderizar contenido útil en la pantalla.
+			</p>
+			
+			<p>La optimización de imágenes es un arte y una ciencia al mismo tiempo: un arte porque no hay ninguna respuesta definitiva a la hora de comprimir una imagen concreta de la mejor forma posible y una ciencia porque se han desarrollado muchas técnicas y algoritmos que pueden reducir significativamente el tamaño de una imagen. Para encontrar la configuración óptima para una imagen hay que realizar un análisis pormenorizado de diferentes parámetros: las capacidades del formato, el contenido de los datos codificados, la calidad, la dimensión de los píxeles y más.
+			</p>
+			
+		
+		</article> <!--Optimización de imágenes para la web-->
+		
+		<article>
+			
+			<h3 id="t5p41">Conceptos de Resolución y Profundidad del color o paleta de colores</h3>
+			<div class="contenido1">
+				<p>La <strong>resolución de una imagen</strong> es el grado de detalle o calidad de una imagen digital. Este valor se expresa en ppp (píxeles por pulgada) o en inglés dpi (dots per inch). Cuantos más píxeles contenga una imagen por pulgada lineal, mayor calidad tendrá.
+				</p>
+
+				<p>Para las imágenes digitales almacenadas como mapa de bits, la convención es describir la resolución de la imagen con dos números enteros, donde el primero es la cantidad de columnas de píxeles (cuántos píxeles tiene la imagen a lo ancho) y el segundo es la cantidad de filas de píxeles (cuántos píxeles tiene la imagen a lo alto).
+				</p>
+				
+				<img style="margin-left: -60px;" src="../img/tema 5/resolucion.png" alt="Imagenes Vectorial y Mapa de Bits"/>
+				
+				<p>Se llama <strong>profundidad de color</strong> al término que describe el número o la cantidad de bits utilizados para representar el color de un solo píxel (un bit es un dígito binario, que tiene un valor de 0 o 1). Este concepto de profundidad también se conoce como bits por píxel (bpp), es decir, la cantidad de color que hay en cada píxel, y se ocupa como unidad de medida sobre todo cuando se especifica junto con el número de bits utilizados. Mientras mayor es la profundidad de color se da una gama más amplia de distintos colores.
+				</p>
+				
+				<img style="margin-left: 40px;" src="../img/tema 5/profundidad.png" alt="Imagenes Vectorial y Mapa de Bits"/>
+				
+				<p>A medida que el número de bits aumenta, el número de colores posible se convierte en un gran mapa de color. Por lo tanto, en mayores profundidades de color, el valor codifica directamente la intensidad de rojo, verde y azul para especificar un color en el modelo de color RGB. Las profundidades de color más usadas son:
+				</p>
+				
+				<p style="margin-left:40px;"><strong>1) Color de 8-bits:</strong> Es un sistema muy limitado. Posee tres bits (23 = 8 niveles posibles) para el verde (G) y tres para el rojo(R). Para el azul (B) en cambio, posee sólo 2 bits (22 = 4 niveles) ya que el ojo humano normal es menos sensible a la componente azul que al rojo o verde, por lo que se le asigna un valor menor que a los demás. El resultado es de 256 colores diferentes.
+				</p>
+				
+				<img style="margin-left: 40px;" src="../img/tema 5/8bits.png" alt="Imagenes Vectorial y Mapa de Bits"/>
+				
+				<p style="margin-left:40px;"><strong>2) Color de 16-bits:</strong> Utiliza 5 bits para el color rojo, (25 = 32 niveles) 5 también para representar el azul (32 niveles), y 6 bits para el verde (26 = 64 niveles). Éstos, por consiguiente, pueden combinarse para dar 65.536 colores mezclados (32 × 64 × 32). Color de 16-bits se conoce como “miles de colores” o highcolor, en los computadores.
+				</p>
+				
+				<img style="margin-left: 40px;" src="../img/tema 5/16bits.png" alt="Imagenes Vectorial y Mapa de Bits"/>
+				
+				<p style="margin-left:40px;"><strong>3) Color de 24-bits:</strong> También llamado color verdadero, puede imitar mucho más de los colores se encuentran en el mundo real, produciendo 16,8 millones de colores distintos. Esto se acerca al nivel en el que los monitores con megapixeles pueden mostrar diferentes colores para la mayoría de las imágenes fotográficas. Usa 8 bits para representar el color rojo, 8 bits para representar el azul y 8 bits para representar de color verde. 28 = 256 niveles de cada uno de estos tres colores; por consiguiente, pueden combinarse para dar un total de 16,8 colores mezclados (256 × 256 × 256). Se conoce como “millones de colores” o truecolor en los computadores.
+				</p>
+				
+				<img style="margin-left: 40px;" src="../img/tema 5/24bits.png" alt="Imagenes Vectorial y Mapa de Bits"/>
+				
+			</div>
+		</article> <!--Conceptos de Resolución y Profundidad del color o paleta de colores-->
+		
+		<article>
+			
+			<h3 id="t5p42">Recomendaciones para la web (dimensiones, formato, resolución, paleta de colores…)</h3>
+			<div class="contenido1">
+				<h4>Resolución</h4>
+				<p>La resolución determina cuanto detalle tiene la imagen, mientras mayor es la resolución, mayor es el detalle. Las reglas de dedo son:
+				</p>
+				
+				<ul>
+					<li style="margin-top: 5px; margin-left: 60px;">Web: 72 dpi o 96 dpi</li>
+					<li style="margin-top: 5px; margin-left: 60px;">Impresiones: 300 dpi es suficiente</li>
+				</ul><br/>
+				
+				<h4>Formato</h4>
+				<p>Existen tres formatos de imagen universales: GIF, PNG y JPEG. Además de estos formatos, algunos navegadores también admiten formatos más nuevos, como WebP y JPEG XR, que ofrecen una mejor compresión global y más funciones. Así pues, ¿qué formato deberías utilizar?
+				</p>
+				
+					<ol>
+						<li style="margin-top: 5px; margin-left: 60px;"><strong>¿Necesitas animación? Si es así, GIF es la única opción universal.</strong></li>
+						
+						<li style="margin-top: 5px; margin-left: 60px;">GIF limita la paleta de color a un máximo de 256 colores, lo que supone una elección pobre para la mayoría de imágenes. Además, PNG-8 proporciona una mejor compresión para imágenes con una paleta pequeña. Por lo tanto, GIF es la solución adecuada solo cuando se requiere animación.</li>
+						
+						<li style="margin-top: 5px; margin-left: 60px;"><strong>¿Necesitas conservar los detalles precisos con la mejor resolución? Utiliza PNG.</strong></li>
+						
+						<li style="margin-top: 5px; margin-left: 60px;">PNG no aplica ningún algoritmo de compresión con pérdida más allá de la elección de tamaño de la paleta de color. Por lo tanto, las imágenes PNG tienen la máxima calidad, pero a un coste de tamaño de archivo significativamente superior a otros formatos. Utilízalo con criterio.</li>
+						
+						<li style="margin-top: 5px; margin-left: 60px;">Si el recurso de imagen contiene imágenes compuestas por formas geométricas, plantéate convertirlo en un formato vectorial (SVG).</li>
+						
+						<li style="margin-top: 5px; margin-left: 60px;">Si el recurso de imagen contiene texto, detente y piénsatelo bien. El texto insertado en las imágenes no se puede seleccionar, no se puede buscar ni se puede ampliar. Si tienes que mostrar un aspecto personalizado (por cuestiones de marca u otros motivos), utiliza fuentes web.</li>
+						
+						<li style="margin-top: 5px; margin-left: 60px;"><strong>¿Quieres optimizar una foto, una captura de pantalla o un recurso de imagen similar? Utiliza JPEG.</strong></li>
+						
+						<li style="margin-top: 5px; margin-left: 60px;">En el formato JPEG se utiliza una combinación de optimización con y sin pérdida para reducir el tamaño de archivo del recurso de imagen. Prueba varios niveles de calidad JPEG para encontrar el equilibrio entre una buena calidad y un tamaño de archivo adecuado para tu recurso.</li>
+					</ol>
+				
+				<h4>Profundidad del color</h4>
+				<p>La profundidad de color (bits por píxel) es la cantidad de bits de información necesarios para representar el color de un píxel en una imagen digital. El formato de la imagen prestablece la profundidad de color, los valores más comunes para imágenes en color son:
+				</p>
+				
+				<ul>
+					<li>GIF: 8 bits con 256 colores.
+					</li>
+					
+					<li>JPEG: 24 bits alcanzan 16,7 millones de colores.
+					</li>
+					
+					<li>PNG: opciones de 24 bits para paletas RGB y 32 bits para paletas RGBA con transparencia que tiene 16,7 millones de colores más la transparencia.
+					</li>
+				</ul>
+						
+			</div>
+
+		</article> <!--Recomendaciones para la web (dimensiones, formato, resolución, paleta de colores…)-->
+
+		
+		<article>
+			
+			<h2 id="t5p5">Herramientas de optimización de imágenes</h2>
+			
+			<p>Estas aplicaciones nos facilita el trabajo de optimizar una imagen a través de herramientas.
+			</p>
+			
+			<h4>Free Image Optimizer</h4>
+			<a href="http://www.imageoptimizer.net/Pages/Home.aspx">Free Image Optimizer</a>
+			<p>Usando esta servicio online gratuito, podrá redimensionar, comprimir y optimizar imágenes.
+			</p>
+			
+			<h4>Smush.it</h4>
+			<a href="http://www.imgopt.com/">Smush.it</a>
+			<p>Es una herramienta online de Yahoo! que permite eliminar los bytes innecesarios de las imágenes. Puedes subir una fotografía o bien añadiendo un URL de la imagen.
+			</p>
+			
+			<h4>Tiny PNG</h4>
+			<a href="https://tinypng.com/">Tiny PNG</a>
+			<p>Con esta herramienta en línea puedes conseguir que tus fotos tengan menor tamaño (kb). El único requisito es que ese documento tenga formato de imagen PNG, que realmente es recomendable por su buena calidad. Puedes trabajar hasta con 20 archivos a la vez que pesen menos de 5 mb. La herramienta te informa al final qué porcentaje se ha reducido y el actual tamaño de tu archivo.
+			</p>
+			
+		
+		</article> <!--Optimización de imágenes para la web-->
+		
+		<article>
+			
+			<h2 id="t5p6">Inclusión de imágenes en la web. Etiqueta img</h2>
+			
+				
+		</article> <!--Inclusión de imágenes en la web. Etiqueta <img>-->
+		
+		<article>
+			
+			<h3 id="t5p61">Imágenes de contenido e imágenes de adorno</h3>
+			<div class="contenido1">
+				<p>Las imágenes son uno de los elementos más importantes de las páginas web. De hecho, prácticamente todas las páginas web contienen alguna imagen y la mayoría incluyen decenas de imágenes. Dentro de las imágenes que se pueden incluir en una página HTML se deben distinguir dos tipos: las imágenes de contenido y las imágenes de adorno.
+				</p>
+				
+				<p>Las imágenes de contenido son las que proporcionan información y complementan la información textual. Las imágenes de adorno son las que se utilizan para hacer bordes redondeados, para mostrar pequeños iconos en las listas de elementos, para mostrar fondos de página, etc. Las imágenes de contenido se incluyen directamente en el código HTML mediante la etiqueta img y las imágenes de adorno no se deberían incluir en el código HTML, sino que deberían emplearse hojas de estilos CSS para mostrarlas
+				</p>
+			</div>
+
+		</article> <!--Imágenes de contenido e imágenes de adorno-->
+		
+		<article>
+			
+			<h3 id="t5p62">La etiqueta img</h3>
+			<div class="contenido1">
+				<p>A continuación se muestra la definición de la etiqueta img, utilizada para incluir las imágenes en las páginas HTML:
+				</p>
+			</div>
+				<img style="margin-left: 40px;" src="../img/tema 5/atributos_img.png" alt="Atributos <img>"/>
+			<div class="contenido1">
+				<p>Los dos atributos requeridos son src y alt. El atributo src es similar al atributo href de los enlaces, ya que establece la URL de la imagen que se va a mostrar en la página. Las URL indicadas pueden ser absolutas o relativas. El atributo alt permite describir el contenido de la imagen mediante un texto breve. Las descripciones deben tener una longitud inferior a 1024 caracteres y son útiles para las personas y dispositivos discapacitados que no pueden acceder a las imágenes.
+				</p>
+			</div>
+
+		</article> <!--La etiqueta img-->
+	</section>
+	
+		<div id="diTema5">
+		<ul>
+			<li class="ind1">
+				<a href="portfolio/tema5.html">5 - Imágenes para la web</a>
+			</li> 
+				<ul>
+					<li class="ind2">
+						<a href="#t5p1">Tipos de imágenes</a>
+					</li>
+					<li class="ind2">
+						<a href="#t5p2">Formatos de imágenes</a>
+					</li>
+						<ul>
+							<li class="ind3">
+								<a href="#t5p21">Relación calidad y su "peso"</a>
+							</li>
+							<li class="ind3">
+								<a href="#t5p22">Formatos web: "jpg", "gif", "png". Características, pros y contras de cada uno de ellos</a>
+							</li>					
+						</ul>
+					
+					<li class="ind2">
+						<a href="#t5p3">Software para procesar imágenes</a>
+					</li>
+					
+					<li class="ind2">
+						<a href="#t5p4">Optimización de imágenes para la web</a>
+					</li>
+						<ul>
+							<li class="ind3">
+								<a href="#t5p41">Conceptos "Resolución" y "Profundidad del color o paleta de colores"</a>
+							</li>	
+							<li class="ind3">
+								<a href="#t5p42">Recomendaciones para imágenes en la web (dimensión, formato, resolución, paleta)</a>
+							</li>							
+						</ul>
+					
+					<li class="ind2">
+						<a href="#t5p5">Herramitas de optimización de imágenes</a>
+					</li>
+					
+					<li class="ind2">
+						<a href="#t5p6">Inclusión de imágenes en la web. Etiqueta img</a>
+					</li>
+						<ul>
+							<li class="ind3">
+								<a href="#t5p61">Distinguir entre imágenes de contenido e imágenes de "adorno"</a>
+							</li>
+							<li class="ind3">
+								<a href="#t5p62">Etiqueta img atributos</a>
+							</li>	
+						</ul>
+				</ul>
+		</ul>
+	</div><!--Tema 5-->
+		
+	<!-- fffCuerpo página -->
+
+		<footer>
+		<img src="../img/logo_fp.png" alt="CIFP Aviles Logo"/>
+		<h3>Diseño Interfaces Web</h3>
+		<h4>2º Desarrollo de apliciones Web</h4>
+	
+		<p>Copyright &copy; 2016 | Ignacio Rubio Paredes
+		</p>
+	</footer>
+</body>
+
+</html>

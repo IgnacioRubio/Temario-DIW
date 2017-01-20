@@ -1,0 +1,262 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/**************************************/
+/*Cabecera de la pagina*/
+/*color para t1, t3, t5*/
+#cab1{
+	background-color: #003d99;
+}
+/*color para t2, t4*/
+#cab2{
+	background-color: #28335A;
+}
+
+header{
+	border-bottom: 10px #339966 solid;
+}
+#cabecera{
+	margin: auto;
+	width: 75%;
+	height: 200px;
+	overflow: hidden;
+	
+}
+#cabecera img{
+	float: left;
+	margin-left: 50px;
+}
+
+#cabecera h1{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-right: 30px;
+	color: white;
+	text-align: right;
+	padding-right: 10px;
+	float: right;
+	font-family: 'Montserrat', sans-serif;
+}
+		
+#cabecera h2{
+	float: right;
+	margin: 20px;
+	width: 500px;
+	color: white;
+	text-align: right;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/**************************************/
+/*nav*/
+nav{
+	background-color: #333;
+}
+#nave{
+	width: 75%;
+	margin:auto;
+}
+
+#nave ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	
+}
+#nave li{
+	float: right;
+}
+#nave li a{
+	display: inline-block;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#nave li a:hover{
+	background-color: #111;
+}
+
+/**************************************/
+/*camino de pagina*/
+.camino{
+	font-size: 25px;
+	font-weight: bold;
+	color: #000000;
+	padding: 10px;
+	margin-top: 30px;
+	margin-left: 30px;
+	
+	/*background-color: #339966;border-bottom: 3px dotted black;*/
+
+}
+
+.camino a:link, .camino a:visited{
+	text-decoration: none;
+	color: #000000;
+}
+
+.camino a:hover, .camino a:active{
+	text-decoration: underline;
+	color: #000000;
+}
+
+/**************************************/
+/*Cuerpo de pagina*/
+
+section{
+	width: 60%;
+	float: left;
+	box-sizing: border-box;
+	border: 10px solid #669999;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	margin-left: 20px;
+	padding: 40px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+section h1{
+	font-size: 50px;
+}
+section h2{
+	font-size: 37px;
+	border-bottom: 2px solid black;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+section h3{
+	font-size: 25px;
+	border-bottom: 2px dotted black;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+section p{
+	line-height: 1.5em;
+	text-align: justify;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+
+.contenido1{
+	margin-left: 40px;
+}
+.contenido1 li{
+	margin-top: 40px;
+	margin-left: 20px;
+}
+.contenido1 img{
+	margin-left: 200px;
+	margin-top: 25px;
+	margin-bottom:  25px;
+}
+
+
+/**************************************/
+/*indice tema 1*/
+#diTema1, #diTema3, #diTema5{
+	width: 25%;
+	margin-bottom: 40px;
+	background-color: #28335A;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	float: left;
+	margin-left: 60px;
+	margin-top: 20px;
+	position: relative;
+}
+
+/*indice tema 2*/
+#diTema2, #diTema4{
+	width: 25%;
+	margin-bottom: 40px;
+	background-color: #003d99;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	float: left;
+	margin-left: 60px;
+	margin-top: 20px;
+	position: relative;
+}
+
+#diTema2 li, #diTema4 li, #diTema1 li, #diTema3 li, #diTema5 li{
+	list-style-type: none;
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.ind1{
+	border-bottom: 5px dashed #262626;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.ind2{
+	border-bottom: 3px solid green;
+	font-size: 25px;
+}
+
+.ind3{
+	margin-left: 50px;
+	font-size: 20px;
+}
+
+
+#diTema2 a:link, #diTema2 a:visited, #diTema4 a:link, #diTema4 a:visited, #diTema1 a:link, #diTema1 a:visited, #diTema3 a:link, #diTema3 a:visited, #diTema5 a:link, #diTema5 a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+#diTema2 a:hover, #diTema2 a:active, #diTema4 a:hover, #diTema4 a:active, #diTema1 a:hover, #diTema1 a:active, #diTema3 a:hover, #diTema3 a:active, #diTema5 a:hover, #diTema5 a:active{
+	text-decoration: underline;
+}
+
+
+/**************************************/
+/*Pie de pagina*/
+footer{
+	width: 100%;
+	margin-top: 40px;
+	background-color: #262626;
+	padding: 10px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+footer h3, footer h4, footer p{
+	margin-left: 40px;
+	margin-top: 30px;
+	color: white;
+}
+
+footer h3{	
+	font-size: 1.5em;
+}
+
+
+footer img{
+	width: 90px;
+	height: 90px;
+	margin-bottom: 40px;
+	float: right;
+	margin-right: 100px;
+	margin-top: 20px;
+}
+
+footer p{
+	color: white;
+}

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Tema 1 - Diseño Web"/>
+	<meta name="keywords" content="HTML, CSS"/>
+	<meta name="author" content="Ignacio Rubio"/>
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico"/>
+	<link rel="stylesheet" href="../css/estilo_temas.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	
+	<title>DW - Tema 1</title>
+
+</head>
+
+
+<body>
+
+	<header id="cab1">
+		<div id="cabecera">
+			<a href="../index.html">
+				<img src="../img/logo_blanco.png" alt="Logo Desarrollo Web" width="200" height="200"/>
+			</a>
+			<h1>Diseño de Interfaces Web</h1>
+			<h2>2º Desarrollo de apliciones Web</h2>
+		</div>
+	</header>
+	
+	<nav >
+		<div id="nave">
+			<ul>
+			
+				<li>
+					<a href="tema5.html">TEMA 5</a>
+				</li>
+							
+				<li>
+					<a href="tema4.html">TEMA 4</a>
+				</li>
+				<li>
+					<a href="tema3.html">TEMA 3</a>
+				</li>
+				<li>
+					<a href="tema2.html">TEMA 2</a>
+				</li>
+				<li>
+					<a href="tema1.html">TEMA 1</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="camino">
+		<a href="../index.html">Ínicio</a> <span>>>>></span> <a href="tema1.html">Tema 1</a>
+	</div>
+	<!-- Cuerpo página <div id="diRuta">
+			<a href="../index.html">Inicio</a> > Tema 1
+		</div>-->
+	<section>
+	
+		
+		
+		<h1>1. Planificación de Interfaces Web</h1>
+
+		<div class="partes">
+		<h2 id="t1p1">Elementos básicos de una interfaz web</h2>
+
+
+		<article>
+			<h3 id="t1p11">El color</h3>
+			
+			<div class="contenido1">
+				<ul>
+
+					<li>
+						<h4>Modelo RGB</h4>
+					</li>
+						<p>RGB es un modelo de color basado en la síntesis aditiva, con el que es posible representar un color mediante la mezcla por adición de los tres colores de luz primarios. El modelo de color RGB no define por sí mismo lo que significa exactamente rojo, verde o azul, por lo que los mismos valores RGB pueden mostrar colores notablemente diferentes en distintos dispositivos que usen este modelo de color. Aunque utilicen un mismo modelo de color, sus espacios de color pueden variar considerablemente.
+						</p>
+
+						<p>Para indicar con qué proporción es mezclado cada color, se asigna un valor a cada uno de los colores primarios, de manera que el valor "0" significa que no interviene en la mezcla y, a medida que ese valor aumenta, se entiende que aporta más intensidad a la mezcla. Aunque el intervalo de valores podría ser cualquiera (valores reales entre 0 y 1, valores enteros entre 0 y 37, etc.), es frecuente que cada color primario se codifique con un byte (8 bits).
+						</p>
+
+						<p>Así, de manera usual, la intensidad de cada una de las componentes se mide según una escala que va del 0 al 255 y cada color es definido por un conjunto de valores escritos entre paréntesis (correspondientes a valores "R", "G" y "B") y separados por comas.
+						</p>
+
+						<p>De este modo, el rojo se obtiene con (255,0,0), el verde con (0,255,0) y el azul con (0,0,255), obteniendo, en cada caso un color resultante monocromático. La ausencia de color, es decir el color negro, se obtiene cuando las tres componentes son 0: (0,0,0). La combinación de dos colores a su máximo valor de 255 con un tercero con valor 0 da lugar a tres colores intermedios. De esta forma, aparecen los colores amarillo (255,255,0), cian (0,255,255) y magenta (255,0,255). El color blanco se forma con los tres colores primarios a su máximo valor (255,255,255).
+						</p>
+
+					 <!--Modelo RGB-->
+
+					<li>
+						<h4>Modelo HSL</h4>
+					</li>
+						<p>El modelo HSL (del inglés Hue, Saturation, Lightness – Matiz, Saturación, Luminosidad), que es similar a HSV o HSI (del inglés Hue, Saturation, Intensity – Matiz, Saturación, Intensidad), define un modelo de color en términos de sus componentes constituyentes. El modelo HSL se representa gráficamente como un cono doble o un doble hexágono. Los dos vértices en el modelo HSL se corresponden con el blanco y el negro, el ángulo se corresponde con el matiz, la distancia al eje con la saturación y la distancia al eje blanco-negro se corresponde a la luminancia. Como los modelos HSI y el HSV, es una deformación no lineal del espacio de color RGB.
+						</p>
+						
+						<img src="../img/tema 1/modelo_hsl.png" alt="Modelo HSL"/>
+
+						<p><strong>- Matiz (Tono)</strong> es el nombre técnico de lo que normalmente llamamos "color" o sea la longitud de la onda luminosa. El espectro visible del matiz está entre el rojo y el violeta, es decir entre 380 y 780 nanómetros de longitud de onda.</p>
+						<p><strong>- Saturación (Croma)</strong> es la mezcla de los colores entre sí. Es decir la interferencia de unas ondas con otras de diferentes frecuencias. Una alta saturación indica que vemos el color en toda su pureza, sin interferencias.</p>
+						
+						<p>Una menor saturación indica que el color tiene mezcla con otros colores con los que interfiere. Cuando las ondas de todos los colores se perciben con igual valor, el matiz no se diferencia y sólo se ve el color blanco.</p>
+						
+						<p><strong>- Brillo (Valor)</strong> es la intensidad lumínica. Es la frecuencia de la onda luminosa. Una luminosidad alta hace que el color se aprecie más vibrante e intenso, una luminosidad baja hace que el color se apague y tienda hacia el negro.
+						</p>
+
+						<p>Un color queda definido por sus valores de tono, brillo y saturación. Cualquier color se puede identificar con los valores de estas tres variables. El negro se obtiene cuando no hay brillo (ausencia de luz). Los grises se obtienen cuando la saturación es baja (mezcla o interferencia luminosa alta). De los grises el blanco es el más brillante (máxima frecuencia de ondas de distintas longitudes). Este modelo de representación del color se conoce como HSB (Hue, Saturation, Bright).
+						</p>
+
+					 <!--Modelo HSL-->
+
+					<li>
+						<h4>Modelo HSV</h4>
+					</li>
+						<p>Espacio de color HSV. Representación tridimensional del color basado en los componentes de tinte, matiz o tonalidad (hue, en inglés), saturación (saturation) y brillo o valor (value).
+						</p>
+
+						<p>El modelo de color HSV es una transformación no lineal del modelo RGB en coordenadas cilíndricas de manera que cada color viene definido por las siguientes dimensiones:
+						</p>
+
+						<p><strong>- Tinte o matiz:</strong> ángulo que representa el matiz, normalmente definido entre 0º y 360º.</p>
+						<p><strong>- Saturación:</strong> nivel saturación del color, dado entre 0 y 1, 0 representa sin saturación alguna (blanco), hasta 1 que sería el matiz en toda su intensidad. Es común también darlo en percentiles 0%-100%.</p>
+						<p><strong>- Brillo:</strong> Nivel del brillo entre 0 y 1. 0 es negro; 1, blanco. Al igual que la saturación puede darse en porcientos entre 0% y 100%. De esta forma el 50% indica el nivel medio o normal del brillo del color.
+						</p>
+
+					 <!--Modelo HSV-->
+
+					<li>
+
+						<h4>Relación de aplicaciones y modelo de color que usan, por ejemplos: las herramientas de Adobe, Gimp...</h4>
+					</li>
+					
+						<p>Adobe utiliza los modelos: RGB, CMYK, LAB, escala de grises, mapa de bits, Duotono, color indexado, Multicanal.
+						</p>
+
+						<p>GIMP utiliza los modelos: RGB, escala de grises y color indexado.
+						</p>
+
+					 <!--Releacion de aplicaciones...-->
+
+					<li>
+
+						<h4>Herramientas y direcciones para la selección de colores</h4>
+					</li>
+					
+						<p>
+						<a href="http://paletton.com/">Paletton</a> <br/>
+						<a href="https://color.adobe.com/es/create/color-wheel/ ">Adobe Color-Wheel</a><br/>
+						<a href="https://brandcolors.net/">Brandcolor</a> <br/>
+						<a href="http://javier.xyz/cohesive-colors/">Cohesive Colors</a> <br/>
+						
+						</p>
+					 <!--Herramientas y direcciones web...-->
+
+				</ul>
+			</div>
+		</article> <!--El color-->
+		
+		
+		<article>
+			<div class="contenido1">
+				<h3 id="t1p12">La tipografía</h3>
+				
+				
+				<ul>
+
+					<li>
+						<h4>"con Serif" y "sin serif" o "Sans-Serif"</h4>
+
+						<p>Las gracias, serifas (del inglés serif) son pequeños adornos ubicados generalmente en los extremos de las líneas de los caracteres tipográficos. Las tipografías Times, Georgia, Garamond y Courier son ejemplos de estilos de letra con remates.
+						</p>
+						<img src="../img/tema 1/serif_sans.png" alt="Serif, Sans-Serif"/>
+						<p>La industria de la impresión se refiere a las tipografías sin remates como sans-serif.
+						</p>
+
+						<p>En las imprentas tradicionales, las tipografías con remate (serif fonts) están destinadas para grandes cantidades de información, debido a que comúnmente se cree que son más cómodas de leer que las tipografías sin remate (sans-serif fonts) para este propósito. Las san-serif se usan para pequeños extractos de texto y para aquellas ocasiones en las que se requiere una apariencia más informal que la apariencia seria de las tipografías con remate. Los tipos san-serif han comenzado a reemplazar a los tipos con remate en encabezados para lograr una apariencia 'más limpia'.
+						</p>
+
+						<p>Aunque las tipografías con remate son más legibles en medios impresos, se ha probado que las san-serif son más legibles en las pantallas digitales; como resultado, la mayoría de las páginas web emplean tipos sin remate.
+						</p>
+
+					</li> <!--con serif y sans-serif-->
+
+					<li>
+						<h4>Unidades de medida relativa y absoluta. Pros y contra</h4>
+
+						<p>Una medida indicada mediante unidades absolutas está completamente definida, ya que su valor no depende de otro valor de referencia.
+						</p>
+
+						<p>La principal ventaja de las unidades absolutas es que su valor es directamente el valor que se debe utilizar, sin necesidad de realizar cálculos intermedios. Su principal desventaja es que son muy poco flexibles y no se adaptan fácilmente a los diferentes medios.
+						</p>
+
+						<p>De todas las unidades absolutas, la única que suele utilizarse es el punto (pt). Se trata de una unidad preferida para establecer el tamaño del texto en los documentos que se van a imprimir.
+						</p>
+
+						<p>Las unidades relativas, a diferencia de las absolutas, no están completamente definidas, ya que su valor siempre está referenciado respecto a otro valor. A pesar de su aparente dificultad, son las más utilizadas en el diseño web por la flexibilidad con la que se adaptan a los diferentes medios.
+						</p>
+
+						<p>La gran ventaja de las unidades relativas es que siempre mantienen las proporciones del diseño de la página.
+						</p>
+
+					</li> <!-- unidades de medida relativa y absoluta-->
+
+				</ul>
+			</div>
+		</article> <!--La tipografía-->
+
+		<article>
+
+			<h3 id="t1p13">Los iconos</h3>
+			<div class="contenido1">
+				<p>Un icono es un pictograma, un gráfico pequeño que en el escritorio, archivos, sitios web y en todo tipo de contextos es empleado para representar a un objeto dado como un programa, un documento, una sección o un comando.
+				</p>
+				
+				<img src="../img/tema 1/iconos.png" alt="Ejemplos Iconos"/>
+				
+				<p>La práctica informática dispone que el usuario haga click en el icono de su interés para activar una o una serie de funciones específicas.
+				</p>
+
+				<p>Un icono debe reunir una serie de características, entre las que destacan las siguientes:
+				</p>
+
+				<p><b>1.</b> Debe ser los más sencillo posible, con los suficientes detalles como para expresar lo que debe<br/> <b>2.</b> Debe seguir los modelos ya aceptados por el público tipo que los va a visualizar<br/> <b>3.</b> Debe estar perfectamente concebido para la información concreta que va a representar
+				</p>
+			</div>
+		</article> <!--Los iconos-->
+		</div>
+
+		<h2 id="t1p2">Estructura de una página web</h2>
+
+		<article id="t1p21">
+
+			<h3>Cabecera</h3>
+			<div class="contenido1">
+				<p>De todas las partes de la estructura del diseño web, el encabezado es la que mayor tendencia tiene a repetirse entre páginas de un mismo sitio. Aún cuando el sitio tenga grandes diferencias en estructura y contenido entre sus páginas, si mantiene una unidad en su encabezado los usuarios percibirán la sensación de unidad.
+				</p>
+
+				<p>El encabezado es una faja horizontal que ocupa todo el ancho de la página en la parte superior de la misma. A la izquierda del encabezado suele ubicarse el logotipo del sitio, que ocupa un área importante dentro del mismo, aunque suelen haber diferencias importantes de un sitio a otro. Esta imagen debe tener un enlace a la página principal del sitio, ya que es uno de los estándares más respetados por los diseñadores y una de las formas que tienen los usuarios de volver al inicio.
+				</p>
+
+				<p>Desde el final del logotipo, ocupando el centro y la zona derecha del encabezado, frecuentemente se sitúan una serie de franjas de diferentes grosores. En la franja superior, se encuentran algunos enlaces generales de la página, como acceso a usuarios registrados, registros de usuarios nuevo, acceso a perfiles, salidas, etc., así como ayudas y buscadores internos. La zonas más ancha generalmente se encuentra ocupada por el título de la página, nombre de empresa, slogan, etc.
+				</p>
+
+				<p>La zona inferior del encabezado se emplea para ubicar los links de navegación y las etiquetas de navegación, uno de los elementos más importantes a la hora de ayudar a los usuarios a encontrar las páginas que componen el sitio web.
+				</p>
+				
+				<img style="margin-left: 0px; width: 500px;" src="../img/tema 1/cabecera.png" alt="Cabecera"/>
+			</div>
+		</article> <!--Cabecera-->
+
+		<article id="t1p22">
+
+			<h3>Menú o sistema de navegación</h3>
+			<div class="contenido1">
+				<p>Menú o sistemas de navegación son los elementos de una interfaz que permiten la navegación por las diferentes secciones y páginas que componen el sitio web.
+				</p>
+
+				<p>Generalmente se presentan como menús formados por diferentes opciones, con las que el usuario puede interaccionar; al hacer click sobre cada una de ellas es cargada una página o sección de la misma.
+				</p>
+
+				<p>Cada menú de navegación puede estar formado por opciones textuales, gráficas o mixtas, siendo frecuente utilizar en ellas efectos dinámicos para acentuar el carácter interactivo de las mismas. El efecto más habitual es el conocido rollover, en el que todos los componentes cambian de aspecto al situar el puntero sobre ellos (evento mouseover), volviendo la opción a su estado inicial al abandonarla (efecto mouseout).
+				</p>
+				<img src="../img/tema 1/menu_nav.png" alt="Menu Navegador"/>
+
+				<p>Un formato de menú cada vez más usado es el tipo “migas de pan”, sobre todo en páginas de contenidos textuales, que presenta en forma textual una serie de enlaces que describen la ruta que ha seguido el usuario para llegar a la página actual a partir de la página de inicio, permitiendo regresar a cualquiera de ellas rápidamente.
+				</p>
+				<img src="../img/tema 1/menu_nav1.png" alt="Menu Navegador"/>
+
+				<p>Otro tipo de menú muy aceptado es el de pestañas, que simula el aspecto de un clásico archivador de carpetas, apareciendo en primer plano la pestaña activa, en un color diferente y unida visualmente a la base común o al cuerpo de la página.
+				</p>
+				<img src="../img/tema 1/menu_nav2.png" alt="Menu Navegador"/>
+				
+			</div>
+
+		</article> <!--Menú o sistema de navegación-->
+
+		<article id="t1p23">
+
+			<h3>Cuerpo de la página, área de contenido</h3>
+			<div class="contenido1">
+				<p>El cuerpo es la parte de la página web donde se presenta al usuario toda la información referente a los contenidos de la página.
+				</p>
+
+				<p>El cuerpo de la página es la parte de la interfaz web que presenta a los usuarios información específica sobre un tema concreto. Por lo tanto, es la parte de la página que la identifica e individualiza frente a las demás de un sitio web.
+				</p>
+
+				<p>Si el dintel identifica el sitio web y los sistemas de navegación permiten al usuario navegar por los contenidos del mismo, el cuerpo de la página va a ser el escaparate donde visualizará la información que anda buscando, el punto donde podemos comunicarnos con él directamente sobre una cuestión concreta y determinada.
+				</p>
+				<img src="../img/tema 1/cuerpo_pagina.png" alt="Cuerpo Página"/>
+				
+				<p>Al ser la parte más importante de la página, el espacio destinado a ella debe ser el mayor de todos, ocupando generalmente entre el 50% y el 85% del total. Su ubicación es siempre central.
+				</p>
+
+				<p>Los contenidos específicos del cuerpo de la página variarán según sea una página textual, un formulario, una ficha, una tabla o una página mixta.
+				</p>
+				
+			</div>
+		</article> <!--Cuerpo de la página, área de contenido-->
+
+
+		<article id="t1p24">
+
+			<h3>Pie de página</h3>
+			<div class="contenido1">
+				<p>El pie de página es el elemento de una interfaz web situado en la parte inferior de la misma, bajo el cuerpo de página.
+				</p>
+
+				<p>El pie de página es un elemento opcional, que suele contener información muy concreta.
+				</p>
+
+				<p>Si la página es muy alta, de tal forma que el usuario se vea obligado a utilizarla barra de desplazamiento del navegador, el pie de página suele contener un menú auxiliar que permite al usuario continuar navegando por el sitio web sin tener que volver a buscar el menú principal.
+				</p>
+
+				<p>Uno de los usos más comunes del pie de página en la actualidad es mostrar información sobre la empresa propietaria del sitio web o de su responsable directo. Esto es debido en España a la nueva Ley de Servicios de la Sociedad de la Información y del comercio electrónico.
+				</p>
+
+				<p>También puede contener un menú específico, en el que suele mostrar enlaces a servicios muy particulares del sitio web, como contratación de publicidad, formulario de contacto, ofertas de empleo, condiciones de uso, políticas de seguridad, etc.
+				</p>
+				<img style="margin-left: 0px;" src="../img/tema 1/pie_pagina.png" alt="Pie Página"/>
+			</div>
+		</article> <!--Pie de página-->
+
+
+		<article id="t1p25">
+
+			<h3>Los espacios en blanco en el diseño</h3>
+			<div class="contenido1">
+				<p>Los espacios en blanco son muy importantes en el diseño de una composición gráfica cualquiera, especialmente en una interfaz web, entendiendo por espacios en blanco todas aquellas zonas de la interfaz en la que no exista ningún otro elemento gráfico.
+				</p>
+
+				<p>Los espacios en blanco cumplen diferentes misiones en una interfaz: compensan el peso visual del resto de elementos, crean márgenes o separaciones entre ellos, encuadrándolos de forma adecuada, y marcan los límites que estructuran la composición, haciendo la interfaz más equilibrada, limpia y bonita.
+				</p>
+				<img style="margin-left: 0px;" src="../img/tema 1/espacios.png" alt="Espacios"/>
+			</div>
+		</article> <!--Los espacios en blanco en el diseño-->
+
+		
+		<article id="t1p3">
+
+			<h2>Maquetación web</h2>
+			<h3>Maquetación mediante tablas y mediante capas. Pros y contra</h3>
+			<div class="contenido1">
+				<p>La maquetación web es el proceso por el cual se sitúan los contenidos en la página web obedeciendo a unos espacios, generalmente divididos en columnas. Antes de la aparición de CSS la maquetación se hacía con tablas y actualmente se aconseja hacer con las hojas de estilo en cascada.
+				</p>
+			</div>	
+
+		</article> <!--Maquetación web-->
+
+		<article id="t1p4">
+
+			<h2>Prototipo Web</h2>
+			<div class="contenido1">
+				<p>El prototipado de sitios web nos permite definir de una manera rápida sencilla los bloques o secciones que va a tener cada una de las páginas de un sitio web, de modo que podamos jerarquizar la información y definir los bloques de contenido.
+				</p>
+
+				<p>Este paso previo lo realizamos en una reunión con el cliente. Lo importante es que estas secciones salgan después de analizar su negocio y el objetivo que se persigue ante la construcción del sitio web. En este caso el diseñador debe permanecer como observador, limitándose a aconsejar al cliente y asegurarse que no se queda nada fuera.
+				</p>
+
+				<p>Aunque el prototipado es uno de los pasos previos a la realización creativa que se usará para implementar un diseño, su idea no es ofrecer una guía sobre la estética, sino sobre el contenido que debe representarse. Por ello, el diseño de los bloques no debe contener detalles, como titulares o fotografías, sino simplemente quedarse en la definición de las partes de un sitio, dando énfasis en los bloques y su estructura y no en los elementos que irán dentro.
+				</p>
+			</div>
+		</article> <!--Prototipo Web-->
+
+		<article id="t1p5">
+
+			<h2>Mapa de navegación</h2>
+
+			<div class="contenido1">
+				<p>Los mapas de navegación proporcionan una representación esquemática de la estructura del hipertexto, indicando los principales conceptos incluidos en el espacio de la información y las interrelaciones que existen entre ellos. Un mapa es una representación completa del sitio web para orientar al usuario durante el recorrido o para facilitarle un acceso directo al lugar que le interesa. Reflejará la estructura de la web por medio de enlaces a los nodos principales, y éstos también pueden desarrollarse para mostrar los subnodos. El mapa de navegación puede representarse bien en forma textual, bien en forma gráfica, o una combinación de ambas.
+				</p>
+
+				<p>De manera similar a los sumarios, índices y tablas de contenido que sirven para “navegar” por los documentos en papel, estas herramientas también son útiles para navegar por un hipertexto. En la Web, estos mecanismos tradicionales pueden tomar la forma de menús.
+				</p>
+				<img style="margin-left: 0px;" src="../img/tema 1/mapa_navegacion.png" alt="Mapa Navegación"/>
+			</div>
+
+		</article> <!--Mapa de navegación-->
+
+
+		<article id="t1p6">
+
+			<h2>Guías de estilo</h2>
+			<div class="contenido1">
+				<p>La guía de estilo es un documento que recoge normativas y patrones básicos relacionados con el aspecto de una interfaz para una aplicación dentro de un entorno concreto.
+				</p>
+
+				<p>Las guías de estilo son creadas inicialmente como documentos voluminosos muy vistosos que ilustran sobre la apariencia del interfaz de un sistema.
+				</p>
+
+				<p>Su problema más grava es su falta de usabilidad: están pensadas desde una perspectiva de diseño y marketing y no tienen en cuenta las necesidades de sus verdaderos destinatarios, diseñadores y programadores de interfaces.
+				</p>
+			</div>
+		</article> <!--Guías de estilo-->
+
+		<article id="t1p7">
+
+			<h2>Interacción persona-ordenador</h2>
+			<div class="contenido1">
+				<p>La Interacción persona-ordenador, es la disciplina que estudia el intercambio de información entre las personas y los ordenadores. Su objetivo es que este intercambio sea más eficiente minimizando errores e incrementado la satisfacción.
+				</p>
+
+				<p>Dado que la interacción persona-computador estudia la comunicación entre el ser humano y las máquinas, esto involucra conocimientos acerca de ambos. Sobra la máquina se requiere contar conocimiento en cuanto a sistemas operativos, técnicas gráficas, lenguajes de programación y entornos de desarrollo. Sobre las personas, es importante tener unos conocimientos previos, como teoría de la comunicación, disciplinas del diseño gráfico e industrial, lingüística, ciencias sociales, psicología cognitiva y función del ser humano.
+				</p>
+
+				<p>Con el fin de tener un concepto más aproximado sobre el campo de la interacción humano-computador contemplamos en que está especializado:
+				</p>
+
+				<p>a. _Unión de las tareas de los humanos con las máquinas.<br/> b. _Capacidades humanas para utilizar las máquinas.<br/> c. _Algoritmos y programas de la interfaz en sí.<br/> d. _Conceptos de ingeniería que se plantean a la hora de diseñar y construir interfaces.<br/> e. _El proceso de especificación, diseño, e implementación de la interfaz.<br/> f. _Sacrificios del diseño
+				</p>
+			</div>
+		</article> <!--Interacción persona-ordenador-->
+
+
+	</section>
+	<!--fff cuerpo de la pagina-->
+	
+	
+	<!--aside-->
+	<div id="diTema1">
+		<ul>
+			<li class="ind1">
+			
+				<a href="tema1.html">1 - Planificación de interfaces web</a>
+			</li>
+				<ul>
+					<li class="ind2">
+						<a href="#t1p1"> Elementos básicos de una interfaz web</a>
+					</li>
+						<ul>
+					
+							<li class="ind3">
+								<a href="#t1p11">El color</a>
+							</li>
+							<li class="ind3">
+								<a href="#t1p12">La tipografía</a>
+							</li>
+							<li class="ind3">
+								<a href="#t1p13">Los iconos</a>
+							</li>
+						</ul>
+					
+
+					<li class="ind2">
+						<a href="#t1p2">Estructura de una página web<a>
+					</li>
+						<ul>
+							<li class="ind3">
+								<a href="#t1p21">Cabecera</a>
+							</li>
+							<li class="ind3">
+								<a href="#t1p22">Menú o sistema de navegación</a>
+							</li>
+							<li class="ind3">
+								<a href="#t1p23">Cuerpo de la página, área de contenido</a>
+							</li>
+							<li class="ind3">
+								<a href="#t1p24">Pie de página</a>
+							</li>
+							<li class="ind3">
+								<a href="#t1p25">Los espacios en blanco en el diseño</a>
+							</li>			
+						</ul>
+					
+					
+					<li class="ind2">
+						<a href="#t1p3">Maquetación web</a>
+					</li>
+					
+					<li class="ind2">
+						<a href="#t1p4">Prototipo web</a>
+					</li>
+					
+					<li class="ind2">
+						<a href="#t1p5">Mapa de navegación</a>
+					</li class="ind2">
+					
+					<li class="ind2">
+						<a href="#t1p6">Guías de estilo</a>
+					</li>
+					
+					<li class="ind2">
+						<a href="#t1p7">Interacción persona-ordenador</a>
+					</li>
+					
+				</ul>
+		</ul>
+	</div> <!--Tema 1-->
+	
+	<footer>
+		<img src="../img/logo_fp.png" alt="CIFP Aviles Logo"/>
+		<h3>Diseño Interfaces Web</h3>
+		<h4>2º Desarrollo de apliciones Web</h4>
+	
+		<p>Copyright &copy; 2016 | Ignacio Rubio Paredes
+		</p>
+	</footer>
+
+</body>
+
+
+</html>

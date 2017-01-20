@@ -1,0 +1,197 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/**************************************/
+/*Cabecera de la pagina*/
+header{
+	background-color: #28335A;
+	border-bottom: 10px #339966 solid;
+}
+#cabecera{
+	margin: auto;
+	width: 75%;
+	height: 200px;
+	overflow: hidden;
+	
+}
+#cabecera img{
+	float: left;
+	margin-left: 50px;
+}
+
+#cabecera h1{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-right: 30px;
+	color: white;
+	text-align: right;
+	padding-right: 10px;
+	float: right;
+	font-family: 'Montserrat', sans-serif;
+}
+		
+#cabecera h2{
+	float: right;
+	margin: 20px;
+	width: 500px;
+	color: white;
+	text-align: right;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/**************************************/
+/*nav*/
+nav{
+	background-color: #333;
+}
+#nave{
+	width: 75%;
+	margin:auto;
+}
+
+#nave ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	
+}
+#nave li{
+	float: right;
+}
+#nave li a{
+	display: inline-block;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#nave li a:hover{
+	background-color: #111;
+}
+
+
+/**************************************/
+/*texto presentacicion*/
+#present{
+	margin: auto;
+	width: 60%;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	font-family: Impact;
+	font-size: 20px;
+	line-height: 1.5em;
+}
+
+
+/**************************************/
+/*Cuerpo de la pagina
+ul{
+	margin-left: 50px;
+}*/
+
+/**************************************/
+/*indice tema 1*//*indice tema 4*/
+#diTema1, #diTema4{
+	width: 45%;
+	height: 870px;
+	margin-bottom: 40px;
+	background-color: #28335A;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	float: left;
+	margin-left: 30px;
+}
+
+#diTema1 li, #diTema2 li, #diTema3 li, #diTema4 li, #diTema5 li{
+	list-style-type: none;
+	padding: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*indice tema 2*//*indice tema 3*//*indice tema 5*/
+#diTema2, #diTema3, #diTema5{
+	width: 45%;
+	height: 870px;
+	margin-bottom: 40px;
+	background-color: #003d99;
+	padding-top: 20px;
+	box-sizing: border-box;
+	float: left;
+	margin-left: 30px;
+}
+
+#diTema5{
+	margin-left: 350px;
+}
+
+
+.ind1{
+	border-bottom: 5px dashed #262626;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.ind2{
+	border-bottom: 3px solid green;
+	font-size: 25px;
+}
+
+.ind3{
+	margin-left: 50px;
+	font-size: 20px;
+}
+
+
+a:link, a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+a:hover, a:active{
+	text-decoration: underline;
+}
+
+/**************************************/
+/*Pie de pagina*/
+footer{
+	width: 100%;
+	margin-top: 40px;
+	background-color: #262626;
+	padding: 10px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+footer h3, footer h4, footer p{
+	margin-left: 40px;
+	margin-top: 30px;
+	color: white;
+}
+
+footer h3{	
+	font-size: 1.5em;
+}
+
+
+footer img{
+	width: 90px;
+	height: 90px;
+	margin-bottom: 40px;
+	float: right;
+	margin-right: 100px;
+	margin-top: 20px;
+}
+
+footer p{
+	color: white;
+}
